@@ -41,7 +41,7 @@ def about():
 def item_buy(id):
     item = Item.query.get(id)
 
-    api = Api(merchant_id=None,
+    api = Api(merchant_id=1396424,
               secret_key='test')
     checkout = Checkout(api=api)
     data = {
